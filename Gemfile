@@ -7,6 +7,7 @@ gem 'rails', '4.0.8'
 group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
+  gem 'pry-rails'
 end
 
 group :test do
@@ -29,3 +30,13 @@ group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
+
+group :development do
+	gem 'better_errors'
+	gem 'binding_of_caller'
+	gem 'erb2haml'
+end
+
+gem 'haml'
+# Ensures that .haml views are generated instead of .erb ones
+gem 'haml-rails'
